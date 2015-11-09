@@ -10,4 +10,9 @@ class App
     {
         echo 'Создался новый экземпляр класса из папки "vendor/liw/core/"<br>';
     }
+
+    public function run()
+    {
+        echo 'Выполнился метод run родительского класса.';
+    }
 }
