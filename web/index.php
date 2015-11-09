@@ -1,4 +1,16 @@
 <?php
 
-echo 'Привет! Если ты видишь в браузере это сообщение,<br>
-значит сервер настроен правильно и можно приступать к занятиям!';
+class Room
+{
+    private $color = 'red';
+
+    public function changeColor($color)
+    {
+        $this->color = $color;
+    }
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+}
