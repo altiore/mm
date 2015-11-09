@@ -8,6 +8,6 @@ class App
 {
     public function __construct()
     {
-        echo 'Создался новый экземпляр класса из папки "vendor/liw/core/"';
+        echo 'Создался новый экземпляр класса из папки "vendor/liw/core/"<br>';
     }
 }
