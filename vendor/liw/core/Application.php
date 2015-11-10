@@ -2,25 +2,36 @@
 
 namespace liw\core;
 
+use liw\contracts\Runnable;
+
 /**
  * Это абстрактный класс.
  * Нельзя создать объект этого класса.
  * Можно лишь наследоваться от него.
  * Class Application
  */
-abstract class Application
+abstract class Application implements Runnable
 {
+    /**
+     * @var array
+     */
+    protected $config = [];
+
+    /**
+     * Метод выполнится в момент создания объекта
+     */
     public function __construct()
     {
         echo 'Создался новый экземпляр класса из папки "vendor/liw/core/"<br>';
     }
 
     /**
-     * Это абстрактный метод.
-     * Он не содержит реализации (нет тела метода в фигурных скобках)
-     * @return string
+     * @return array
      */
-    abstract public function run();
+    public function getConfig()
+    {
+        return $this->config;
+    }
 
     /**
      * Это финальный метод.

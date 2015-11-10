@@ -12,6 +12,7 @@ use liw\core\Application;
  */
 final class App extends Application
 {
+
     public function __construct()
     {
         // Обращаемся к конструктору родительского класса
@@ -20,16 +21,15 @@ final class App extends Application
     }
 
     /**
-     * @return string
+     * Метод run реализует интерфейс Runnable
+     * обязаны принять аргумент $config, как предписано в интерфейсе
+     *
+     * @param $config
+     * @return void
      */
-    public function run()
+    public function run($config)
     {
-        return 'Возвращаем строку, как предписано в родительском классе.';
+        $this->config = $config;
     }
 
-    /**
-     * Попытка переопределить финальный метод вызовет ошибку.
-     * раскомментируйте строку ниже, чтобы убедиться.
-     */
-    //public function getFramework(){}
 }

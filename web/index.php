@@ -17,6 +17,7 @@ $loader = new \app\Loader();
 // добавляем соответствующие нэймспэйсу директории
 $loader->addNamespace('app', realpath(__DIR__ . '/../app'));
 $loader->addNamespace('liw\\core',  realpath(__DIR__ . '/../vendor/liw/core'));
+$loader->addNamespace('liw\\contracts',  realpath(__DIR__ . '/../vendor/liw/interfaces'));
 
 // регистрируем автозагрузчик
 $loader->register();
