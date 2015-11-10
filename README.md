@@ -1,6 +1,16 @@
 ## PHP ООП.
 ## Урок 1. Введение. Тестируем локальный сервер
 
+#### Необходимо:
+1. Знать основы PHP
+    * [Мои видеоуроки на youtube по основам](https://www.youtube.com/playlist?list=PL5QUj3iB7EoINltUTk16nWZFvBbHYjOdE)
+2. Знать основы работы с системой контроля версий Git
+    * [Мой видеоурок по основам работы с Git](https://www.youtube.com/watch?v=rnfHuWneMXA&index=1&list=PL5QUj3iB7EoJyInbFgm80U2Sz40njGaoy)
+    * [Хорошие видеоуроки от Loftblog по основам работы с Git](https://www.youtube.com/watch?v=PEKN8NtBDQ0&list=PLY4rE9dstrJyTdVJpv7FibSaXB4BHPInb)
+3. Иметь установленный локальный сервер
+4. Иметь какую-либо установленную IDE (PhpStorm, NetBeans, SublimeText...)
+
+#### Ход урока:
 1. Клонируйте репозиторий в свою локальную папку с проектами, для этого:
     * перейдите в консоли в папку, где храните ваши проекты (для windows используйте консоль GitBush, которая идет в комплекте с [установленным Git](https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git))
     * выполните команду ```git clone https://github.com/altiore/mm.git mm``` - эта команда склонирует учебный проект в папку **mm**
