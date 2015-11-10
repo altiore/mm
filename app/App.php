@@ -3,6 +3,7 @@
 namespace app;
 
 use liw\core\Application;
+use liw\core\Validator;
 
 /**
  * Это финальный класс.
@@ -12,6 +13,7 @@ use liw\core\Application;
  */
 final class App extends Application
 {
+    use Validator;
 
     public function __construct()
     {
