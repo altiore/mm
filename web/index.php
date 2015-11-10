@@ -22,8 +22,8 @@ $loader->addNamespace('liw\\contracts',  realpath(__DIR__ . '/../vendor/liw/inte
 // регистрируем автозагрузчик
 $loader->register();
 
-// создали новый объект класса
-$app = new \app\App();
+// регистрируем свой обработчик ошибок и исключений.
+(new \liw\core\ErrorHandler)->register();
 
-// имеем доступ к свойству, добавленному при помощи trait-а
-$app->validate('Какая-то переменная');
+// подключаем файл, который может сгенерировать любую ошибку
+require __DIR__ . '/../app/errors.php';
