@@ -15,6 +15,6 @@
 12. [Автоматическая загрузка (autoload) классов](https://github.com/altiore/mm/tree/lesson12)  
 13. [Интерфейс (interface). Сходства с абстрактным классом, различия](https://github.com/altiore/mm/tree/lesson13)  
 14. [Трэйт (trait)](https://github.com/altiore/mm/tree/lesson14)  
-15. [Обработка ошибок (error hendler), исключения (exceptions)](https://github.com/altiore/mm/tree/lesson15) 
+15. [Обработка ошибок (error handler), исключения (exceptions)](https://github.com/altiore/mm/tree/lesson15) 
 16. [Замыкания (closure)](https://github.com/altiore/mm/tree/lesson16) 
 
