@@ -1,5 +1,5 @@
-# 16 Практичских заданий по PHP - ООП к [видеоурокам от Razzwan-a](https://www.youtube.com/playlist?list=PL5QUj3iB7EoJGDMxuzlV58uh0ybgAHlcN).
-### (Объектно-ориентированный подход)
+## 16 практичских заданий по PHP ***объектно-ориентированный подход (ООП)***
+### приложение к [видеоурокам Razzwan-а](https://www.youtube.com/playlist?list=PL5QUj3iB7EoJGDMxuzlV58uh0ybgAHlcN)
 1. [Введение. Тестируем локальный сервер](https://github.com/altiore/mm/tree/lesson1) 
 2. [Класс (class). Свойства и методы класса](https://github.com/altiore/mm/tree/lesson2)  
 3. [Область видимости свойств и методов класса (private, public, protected)](https://github.com/altiore/mm/tree/lesson3)
