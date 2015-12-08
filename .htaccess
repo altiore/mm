@@ -1,0 +1,10 @@
+RewriteEngine on
+Options All -Indexes
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule  ^(.*) web/$1 [L]
+
+RewriteRule  ^$ web/    [L]
