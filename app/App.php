@@ -46,4 +46,12 @@ class App extends Application
             echo '<br>';
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getVersion()
+    {
+        return 'Liw version is 0.0.1';
+    }
 }
