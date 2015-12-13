@@ -4,15 +4,16 @@ namespace liw\core;
 /**
  * Class App
  */
-class App
+abstract class App
 {
     public function __construct()
     {
         echo 'Создался новый экземпляр класса из папки "vendor/liw/core/"<br>';
     }
 
-    public function run()
-    {
-        echo 'Выполнился метод run родительского класса.';
-    }
+    /**
+     * @param $path
+     * @return mixed
+     */
+    abstract public function run($path = null);
 }
