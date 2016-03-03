@@ -1,8 +1,6 @@
 <?php
 namespace app;
 
-require __DIR__  . '/../vendor/liw/core/App.php';
-
 use liw\core\App as Application;
 
 /**
