@@ -1,8 +1,6 @@
 <?php
 namespace app;
 
-require __DIR__  . '/../vendor/liw/core/App.php';
-
 use liw\core\App as Application;
 
 /**
@@ -11,41 +9,20 @@ use liw\core\App as Application;
  */
 class App extends Application
 {
-    /**
-     * @var array - массив разрешенный путей в приложении
-     */
-    private $path_array = [
-        '/',
-        '/articles',
-        '/contacts'
-    ];
-
     public function __construct()
     {
         // Обращаемся к конструктору родительского класса
         parent::__construct();
-        echo 'Создался новый экземпляр класса из папки "app/"<br><br><br>';
+        echo 'Создался новый экземпляр класса из папки "app/"<br>';
     }
 
     /**
-     * Осуществит разные действия в зависимости от переданого аргумента:
-     * 1. если путь найден, то выведет соответствующую страницу
-     * 2. если путь не найден или не передан, то выведет страницу со статусом 404 (страница не найдена)
-     *  и запишет для разработчика инфрмацию в файл (логирует), что произошло обращение к несуществующей странице
-     * @param $path
-     * @return mixed
+     * Всеядный метод, который может корректно отрабатывать с данными разных типов
+     * @param null|Data1|Data2 $data
      */
-    public function run($path = null)
+    public function run($data = null)
     {
-        if(in_array($path, $this->path_array)){
-            echo "Путь '$path' сущестует.<br> Выводим страницу со статусом 200";
-            echo '<br>';
-        } else {
-            echo "Путь '$path' не существует.<br>
-                Выводим страницу со статусом 404. <br>
-                Логируем (записываем в файл) информацию о том, что произошло обращение к несуществующей странице";
-            echo '<br>';
-        }
+        echo $data->get();
     }
 
     /**
@@ -53,6 +30,6 @@ class App extends Application
      */
     public function getVersion()
     {
-        return 'Liw version is 0.0.1';
+        return 'version = 0.0.1';
     }
 }
