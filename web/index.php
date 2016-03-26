@@ -9,7 +9,7 @@ error_reporting(E_ALL);       // устанавливает уровень от�
 ini_set('display_errors', 1); // дает команду интерпретатору php выводить все отслеживаемые ошибки в браузере
 
 // Подключаем необходимые файлы
-require __DIR__  . '/../vendor/liw/core/App.php';
+require __DIR__  . '/../vendor/liw/core/Application.php';
 require __DIR__ . '/../app/App.php';
 require __DIR__ . '/../app/Data1.php';
 require __DIR__ . '/../app/Data2.php';
