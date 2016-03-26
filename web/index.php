@@ -8,18 +8,20 @@
 error_reporting(E_ALL);       // устанавливает уровень отслеживаемых ошибок интерпретатором php
 ini_set('display_errors', 1); // дает команду интерпретатору php выводить все отслеживаемые ошибки в браузере
 
+// Подключаем необходимые файлы
+require __DIR__  . '/../vendor/liw/core/App.php';
+require __DIR__ . '/../app/App.php';
+require __DIR__ . '/../app/Data1.php';
+require __DIR__ . '/../app/Data2.php';
+
 // Подключаем файл, где храниться автозагрузчик классов
 require __DIR__ . '/../app/Loader.php';
 
 // создаем экземпляр класса автозагрузчика
 $loader = new \app\Loader();
 
-// добавляем соответствующие нэймспэйсу директории
-$loader->addNamespace('app', realpath(__DIR__ . '/../app'));
-$loader->addNamespace('liw\\core',  realpath(__DIR__ . '/../vendor/liw/core'));
-
-// регистрируем автозагрузчик
-$loader->register();
-
-// создали новый объект класса, теперь соответствующий файл загрузится автоматически
 $app = new \app\App();
+
+$data1 = new \app\Data1();
+$data2 = new \app\Data2();
+

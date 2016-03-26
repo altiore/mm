@@ -1,5 +1,4 @@
 <?php
-
 namespace app;
 
 use liw\core\Application;
@@ -28,8 +27,10 @@ final class App extends Application
     }
 
     /**
-     * Попытка переопределить финальный метод вызовет ошибку.
-     * раскомментируйте строку ниже, чтобы убедиться.
+     * @return string
      */
-    //public function getFramework(){}
+    public function getVersion()
+    {
+        return 'version = 0.0.1';
+    }
 }
