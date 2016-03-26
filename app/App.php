@@ -1,7 +1,5 @@
 <?php
-namespace app;
-
-use liw\core\Application;
+namespace liw\app;
 
 /**
  * Это финальный класс.
@@ -9,12 +7,11 @@ use liw\core\Application;
  * Class App
  * @package app
  */
-final class App extends Application
+final class App
 {
     public function __construct()
     {
         // Обращаемся к конструктору родительского класса
-        parent::__construct();
         echo 'Создался новый экземпляр класса из папки "app/"<br>';
     }
 

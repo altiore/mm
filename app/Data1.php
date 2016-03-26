@@ -1,5 +1,5 @@
 <?php
-namespace app;
+namespace liw\app;
 
 class Data1
 {
