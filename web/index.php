@@ -14,14 +14,8 @@ require __DIR__ . '/../app/App.php';
 require __DIR__ . '/../app/Data1.php';
 require __DIR__ . '/../app/Data2.php';
 
-// Подключаем файл, где храниться автозагрузчик классов
-require __DIR__ . '/../app/Loader.php';
+$app = new app\App();
 
-// создаем экземпляр класса автозагрузчика
-$loader = new \app\Loader();
-
-$app = new \app\App();
-
-$data1 = new \app\Data1();
-$data2 = new \app\Data2();
+$data1 = new app\Data1();
+$data2 = new app\Data2();
 
