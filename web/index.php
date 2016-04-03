@@ -10,6 +10,3 @@ ini_set('display_errors', 1); // дает команду интерпретат�
 require __DIR__ . '/../vendor/autoload.php';
 
 $app = new liw\app\App();
-
-$data1 = new liw\app\Data1();
-$data2 = new liw\app\Data2();
