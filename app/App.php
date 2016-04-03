@@ -1,8 +1,5 @@
 <?php
-
-namespace app;
-
-use liw\core\Application;
+namespace liw\app;
 
 /**
  * Это финальный класс.
@@ -10,20 +7,26 @@ use liw\core\Application;
  * Class App
  * @package app
  */
-final class App extends Application
+final class App
 {
+    /**
+     * Конфигурация приложения
+     * @var array
+     */
+    private $config = [];
 
+    /**
+     * App constructor.
+     */
     public function __construct()
     {
         // Обращаемся к конструктору родительского класса
-        parent::__construct();
         echo 'Создался новый экземпляр класса из папки "app/"<br>';
     }
 
     /**
      * Метод run реализует интерфейс Runnable
      * обязаны принять аргумент $config, как предписано в интерфейсе
-     *
      * @param $config
      * @return void
      */
@@ -31,5 +34,4 @@ final class App extends Application
     {
         $this->config = $config;
     }
-
 }
