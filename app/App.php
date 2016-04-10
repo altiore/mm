@@ -1,6 +1,8 @@
 <?php
-
 namespace liw\app;
+
+use liw\traits\GoodByWorld;
+use liw\traits\HelloWorld;
 
 /**
  * Это финальный класс.
@@ -10,6 +12,10 @@ namespace liw\app;
  */
 final class App
 {
+    use HelloWorld, GoodByWorld {
+        GoodByWorld::boot insteadof HelloWorld;
+    }
+
     /**
      * App constructor.
      */
@@ -17,6 +23,10 @@ final class App
     {
         // Обращаемся к конструктору родительского класса
         echo 'Создался новый экземпляр класса из папки "app/"<br>';
+        $this->helloWorld();
+        echo '<br>';
+        $this->by();
+        echo '<br>';
         $this->boot();
     }
 }
