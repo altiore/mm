@@ -1,9 +1,6 @@
 <?php
 
-namespace app;
-
-use liw\core\Application;
-use liw\core\Validator;
+namespace liw\app;
 
 /**
  * Это финальный класс.
@@ -11,27 +8,15 @@ use liw\core\Validator;
  * Class App
  * @package app
  */
-final class App extends Application
+final class App
 {
-    use Validator;
-
+    /**
+     * App constructor.
+     */
     public function __construct()
     {
         // Обращаемся к конструктору родительского класса
-        parent::__construct();
         echo 'Создался новый экземпляр класса из папки "app/"<br>';
+        $this->boot();
     }
-
-    /**
-     * Метод run реализует интерфейс Runnable
-     * обязаны принять аргумент $config, как предписано в интерфейсе
-     *
-     * @param $config
-     * @return void
-     */
-    public function run($config)
-    {
-        $this->config = $config;
-    }
-
 }
