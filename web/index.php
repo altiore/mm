@@ -7,9 +7,6 @@
 // Подключаем файл-автозагрузчик
 require __DIR__ . '/../vendor/autoload.php';
 
-// регистрируем автозагрузчик
-$loader->register();
-
 // регистрируем свой обработчик ошибок и исключений.
 (new \liw\core\ErrorHandler)->register();
 

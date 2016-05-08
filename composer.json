@@ -1,0 +1,20 @@
+{
+    "name": "alriore/mm",
+    "description": "Lessons",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Razzwan",
+            "email": "razvanlomov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "",
+            "liw\\core\\": "vendor/liw/core"
+        }
+    }
+}
