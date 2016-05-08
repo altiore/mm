@@ -4,16 +4,8 @@
  * На этот файл будут переадресованы все запросы нашего сайта.
  */
 
-// Подключаем файл, где храниться автозагрузчик классов
-require __DIR__ . '/../app/Loader.php';
-
-// создаем экземпляр класса автозагрузчика
-$loader = new \app\Loader();
-
-// добавляем соответствующие нэймспэйсу директории
-$loader->addNamespace('app', realpath(__DIR__ . '/../app'));
-$loader->addNamespace('liw\\core',  realpath(__DIR__ . '/../vendor/liw/core'));
-$loader->addNamespace('liw\\contracts',  realpath(__DIR__ . '/../vendor/liw/interfaces'));
+// Подключаем файл-автозагрузчик
+require __DIR__ . '/../vendor/autoload.php';
 
 // регистрируем автозагрузчик
 $loader->register();
