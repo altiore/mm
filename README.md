@@ -20,3 +20,4 @@
 15. [Обработка ошибок (error handler), исключения (exceptions)](https://github.com/altiore/mm/tree/lesson15)  
 16. [Замыкания (closure)](https://github.com/altiore/mm/tree/lesson16) 
 
+17.ALLLLLAAA
